@@ -6,6 +6,17 @@ For general information only. This is not financial, tax or legal advice. Check 
 
 **Live demo:** https://0xelitesystem.github.io/invoice-total-builder/
 
+## Use
+
+1. Click **+ Add line item** and enter a description, quantity, and unit price for each row.
+2. Set a tax rate and an optional discount, as a percent or a flat amount.
+3. Check the subtotal, discount, tax, and total as they update.
+4. Click **Copy summary** to copy a plain-text version of the invoice.
+
+## Why this exists
+
+A quick invoice total should not need a spreadsheet or an invoicing account. This tool totals line items, applies discount then tax, and copies a clean summary. It is one HTML file with inline CSS and JavaScript: no account, no tracking, no analytics, no external scripts or fonts, and it works offline. MIT licensed, so you can fork it, self-host it, or read every line.
+
 ## What it does
 
 Add line items with a description, quantity, and unit price. Set a tax rate and an optional discount, either a percent or a flat amount. The tool shows the subtotal, the discount, the tax, and the total, updating as you type, and copies a plain-text summary of the whole invoice.
@@ -20,9 +31,20 @@ A letterpress type tray: compartmented slots, a typewriter heading, two-color in
 
 Everything runs in your browser. Nothing you type is sent anywhere, stored, or saved. Closing the tab clears it.
 
-## Use it
+## Run locally
 
 Open `index.html` in any modern browser, or host it as a static page. No build step, no dependencies, no network calls.
+
+```bash
+git clone https://github.com/0xelitesystem/invoice-total-builder
+cd invoice-total-builder
+```
+
+Then open `index.html` in any modern browser. Or serve the folder with `python -m http.server 8000` and visit http://localhost:8000.
+
+## Build
+
+No build step. The whole tool is one `index.html` with no dependencies, so there is nothing to install or compile.
 
 ## More
 
